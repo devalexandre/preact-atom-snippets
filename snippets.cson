@@ -207,3 +207,20 @@
       prefix: "pptshr",
       body: "PropTypes.shape({${1}}).isRequired,"
 
+  # Styled-components
+
+    "Preact: Styled-Components":
+      prefix: "psc",
+      body:"import styled from 'styled-components';"
+
+    "Preact: Styled-Components Media Query":
+      prefix: "pscm",
+      body:"import styled from 'styled-components';\nimport media from 'styled-media-query';"
+
+    "Preact: Styled-Components Basic":
+      prefix: "pscb",
+      body:"import styled from 'styled-components';\nexport const Main = styled.main`\n\t`;"
+
+    "Preact: Styled-Components Media Query Basic":
+      prefix: "pscmb",
+      body:"import styled from 'styled-components';\nimport media from 'styled-media-query'\n\texport const Main = styled.main`\n\t${media.lessThan('small','medium')\n\t`}`;"
